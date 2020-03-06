@@ -1,9 +1,12 @@
 {
-  "name": "odata-query",
-  "version": "6.0.0-1",
+  "name": "odata-query-sequelize",
+  "version": "1.0.1",
   "author": "Sean Lynch <techniq35@gmail.com>",
   "license": "MIT",
-  "repository": "techniq/odata-query",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techniq/odata-query.git"
+  },
   "main": "dist/commonjs/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
@@ -24,5 +27,16 @@
     "test": "jest",
     "test-watch": "jest --watchAll",
     "preversion": "npm run build"
-  }
+  },
+  "description": "OData v4 query builder that uses a simple object-based syntax similar to [MongoDB](https://docs.mongodb.com/manual/reference/operator/query/) and [js-data](http://www.js-data.io/v3.0/docs/query-syntax)",
+  "bugs": {
+    "url": "https://github.com/techniq/odata-query/issues"
+  },
+  "homepage": "https://github.com/techniq/odata-query#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "odata"
+  ]
 }

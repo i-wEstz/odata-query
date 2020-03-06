@@ -1,19 +1,20 @@
-# odata-query
+# odata-query-plus
+# Just Adding SubstringOf for Sequelize // Kritchapon.C 
 
 OData v4 query builder that uses a simple object-based syntax similar to [MongoDB](https://docs.mongodb.com/manual/reference/operator/query/) and [js-data](http://www.js-data.io/v3.0/docs/query-syntax)
 
 ## Install
 ```
-yarn add odata-query
+yarn add odata-query-sequelize
 ```
 or
 ```
-npm install --save odata-query
+npm install --save odata-query-sequelize
 ```
 
 and then use the library
 ```js
-import buildQuery from 'odata-query'
+import buildQuery from 'odata-query-sequelize'
 
 const query = buildQuery({...})
 fetch(`http://localhost${query}`)
@@ -228,7 +229,8 @@ const filter = { PropName: { contains: 'foo' } };
 buildQuery({ filter })
 => "$filter=contains(PropName,'foo')"
 ```
-Supported operators: `startswith`, `endswith`, `contains`
+##### ADD SubstringOf by Kritchapon.C
+Supported operators: `startswith`, `endswith`, `contains` , `substringof` 
 
 ##### Functions returning non-boolean values (string, int)
 ```js

@@ -1,7 +1,7 @@
 const COMPARISON_OPERATORS = ['eq', 'ne', 'gt', 'ge', 'lt', 'le'];
 const LOGICAL_OPERATORS = ['and', 'or', 'not'];
 const COLLECTION_OPERATORS = ['any', 'all'];
-const BOOLEAN_FUNCTIONS = ['startswith', 'endswith', 'contains'];
+const BOOLEAN_FUNCTIONS = ['startswith', 'endswith', 'contains' ,'substringof']; //Add by Kritchapon.C
 const SUPPORTED_EXPAND_PROPERTIES = [
   'expand',
   'select',
@@ -245,7 +245,7 @@ function buildFilter(filters: Filter = {}, propPrefix = ''): string {
                     ')'
                   );
                 } else if (BOOLEAN_FUNCTIONS.indexOf(op) !== -1) {
-                  // Simple boolean functions (startswith, endswith, contains)
+                  // Simple boolean functions (startswith, endswith, contains , substringof //Add by Kritchapon.C)
                   result.push(`${op}(${propName},${handleValue(value[op])})`);
                 } else {
                   // Nested property
