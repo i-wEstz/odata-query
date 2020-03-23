@@ -1,11 +1,11 @@
 {
   "name": "odata-query-sequelize",
-  "version": "1.0.1",
-  "author": "Sean Lynch <techniq35@gmail.com>",
+  "version": "1.0.4",
+  "author": "Kritchapon.c <kritchapon.c@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/techniq/odata-query.git"
+    "url": "git+https://github.com/i-wEstz/odata-query.git"
   },
   "main": "dist/commonjs/index.js",
   "module": "dist/esm/index.js",
@@ -38,5 +38,6 @@
   },
   "keywords": [
     "odata"
-  ]
+  ],
+  "dependencies": {}
 }
